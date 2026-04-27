@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Antipas Agoth">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+  
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Antipas Agoth</span>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a class="cta" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="top" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <img src="images/_DSC0675_3-removebg-preview.jpg" alt="Antipas Agoth" class="logo-img">
+          <div>
+            <div class="pill">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Available for freelance • Frontend / Web • Remote</span>
+            </div>
+
+            <h1>
+              Building <span class="gradient-text">fast</span>,
+              <span class="gradient-text">accessible</span> websites.
+            </h1>
+
+            <p>
+              I’m a software developer focused on clean UX, maintainable code,
+              and shipping real features. Explore my projects, skills, and
+              experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="#projects"
+                aria-label="View projects"
+              >
+                <!-- icon -->
+                <span aria-hidden="true">🚀</span>
+                <span>View Projects</span>
+              </a>
+              <a class="btn" href="#contact" aria-label="Contact me">
+                <span aria-hidden="true">✉️</span>
+                <span>Contact</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="card profile" aria-label="Profile summary">
+            <div class="profile-top">
+      
+                <div
+                  class="where"
+                  style="color: var(--muted); font-weight: 800"
+                >
+                  Frontend  Developer
+                </div>
+          
+              </div>
+            </div>
+
+            <div class="kpis" role="list" aria-label="Highlights">
+              <div class="kpi" role="listitem">
+                <strong>5+</strong>
+                <span>Projects shipped</span>
+              </div>
+              <div class="kpi" role="listitem">
+                <strong>2+</strong>
+                <span>Years experience</span>
+              </div>
+   
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">About</div>
+        <p class="sub">
+         I’m a web developer specializing in building responsive, scalable,
+          and user-focused web applications. I work with modern technologies to deliver clean,
+           efficient code and smooth user experiences. I enjoy solving complex problems and 
+           continuously refining my skills in both front-end and back-end development.
+           I’m a web developer specializing in building responsive, scalable,
+            and user-focused web applications. I work with modern technologies to deliver clean, 
+            efficient code and smooth user experiences. I enjoy solving complex problems
+             and continuously refining my skills in both front-end and back-end development.
+        </p>
+
+        <div class="grid-2">
+          <div class="tile">
+            <span class="badge">What I value</span>
+            <h4>Clarity + impact</h4>
+            
+          </div>
+
+          <div class="tile">
+            <span class="badge">How I work</span>
+            <h4>Ship, learn, iterate</h4>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="projects-head">
+          <div>
+            <div class="section-title">Projects</div>
+            <div class="h2">Selected work</div>
+            <p class="sub">
+              Add your best projects. Include a short description, tech stack,
+              and links.
+            </p>
+          </div>
+
+          <div class="filters" aria-label="Project filters (optional)">
+            <button
+              class="chip"
+              type="button"
+              aria-pressed="true"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              class="chip"
+              type="button"
+              aria-pressed="false"
+              data-filter="web"
+            >
+              Web
+            </button>
+            <button
+              class="chip"
+              type="button"
+              aria-pressed="false"
+              data-filter="data"
+            >
+              Data
+            </button>
+            <button
+              class="chip"
+              type="button"
+              aria-pressed="false"
+              data-filter="mobile"
+            >
+              Mobile
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-3" id="projectGrid">
+          <!-- Project 1 -->
+          <article class="project" data-tags="web">
+            <div class="toprow">
+              <div>
+                <span class="badge">Web</span>
+                <h4 style="margin-top: 0.6rem">Smart Attendence Tracker</h4>
+              </div>
+              <span
+                class="badge"
+                style="
+                  border-color: rgba(110, 168, 254, 0.35);
+                  color: var(--text);
+                  background: rgba(110, 168, 254, 0.12);
+                "
+                >Featured</span
+              >
+            </div>
+            <p>
+              A brief description of what the project does and why it matters.
+              Keep it to 1–2 sentences.
+            </p>
+            <div class="meta" aria-label="Tech stack">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+            <div class="link-row">
+              <a class="mini-link" href="#" aria-label="Live demo">React</a>
+              <a class="mini-link" href="#" aria-label="Source code">bootsrap</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project" data-tags="data">
+            <div class="toprow">
+              <div>
+                <span class="badge">Data</span>
+                <h4 style="margin-top: 0.6rem">Project Two</h4>
+              </div>
+            </div>
+            <p>
+              Explain the problem you solved, what dataset/approach you used,
+              and the outcome.
+            </p>
+            <div class="meta">
+              <span class="badge">Python</span>
+              <span class="badge">Pandas</span>
+              <span class="badge">SQL</span>
+            </div>
+            <div class="link-row">
+              <a class="mini-link" href="#" aria-label="Case study"
+                >Case Study</a
+              >
+              <a class="mini-link" href="#" aria-label="Source code">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project" data-tags="mobile web">
+            <div class="toprow">
+              <div>
+                <span class="badge">Mobile/Web</span>
+                <h4 style="margin-top: 0.6rem">Project Three</h4>
+              </div>
+            </div>
+            <p>
+              Describe a product you built end-to-end. Highlight performance, UX
+              improvements, or a key feature.
+            </p>
+            <div class="meta">
+              <span class="badge">React Native</span>
+              <span class="badge">Node</span>
+              <span class="badge">Auth</span>
+            </div>
+            <div class="link-row">
+              <a class="mini-link" href="#" aria-label="Live demo">Live</a>
+              <a class="mini-link" href="#" aria-label="Source code">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project" data-tags="web">
+            <div class="toprow">
+              <div>
+                <span class="badge">Web</span>
+                <h4 style="margin-top: 0.6rem">Project Four</h4>
+              </div>
+            </div>
+            <p>
+              A short, outcome-focused description. Example: reduced load time,
+              improved conversion, or automated workflows.
+            </p>
+            <div class="meta">
+              <span class="badge">Next.js</span>
+              <span class="badge">Postgres</span>
+              <span class="badge">CI/CD</span>
+            </div>
+            <div class="link-row">
+              <a class="mini-link" href="#" aria-label="Live demo">Live</a>
+              <a class="mini-link" href="#" aria-label="Source code">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project" data-tags="data">
+            <div class="toprow">
+              <div>
+                <span class="badge">Analytics</span>
+                <h4 style="margin-top: 0.6rem">Project Five</h4>
+              </div>
+            </div>
+            <p>
+              Describe the dashboard, reporting, or modeling work. Mention
+              accuracy, speed, or usability improvements.
+            </p>
+            <div class="meta">
+              <span class="badge">dbt</span>
+              <span class="badge">Looker</span>
+              <span class="badge">BigQuery</span>
+            </div>
+            <div class="link-row">
+              <a class="mini-link" href="#" aria-label="Demo">Demo</a>
+              <a class="mini-link" href="#" aria-label="Source code">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project" data-tags="mobile">
+            <div class="toprow">
+              <div>
+                <span class="badge">Mobile</span>
+                <h4 style="margin-top: 0.6rem">Project Six</h4>
+              </div>
+            </div>
+            <p>
+              Add a concise story: what users do, what problem it solves, and
+              what you learned building it.
+            </p>
+            <div class="meta">
+              <span class="badge">Expo</span>
+              <span class="badge">REST</span>
+              <span class="badge">Testing</span>
+            </div>
+            <div class="link-row">
+              <a class="mini-link" href="#" aria-label="Release notes"
+                >Release</a
+              >
+              <a class="mini-link" href="#" aria-label="Source code">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">Skills</div>
+        <div class="skills" aria-label="Skill proficiency">
+          <div class="skill-row">
+            <strong>HTML</strong>
+            <div>
+              <div class="bar" aria-hidden="true">
+                <div class="fill" style="width: 88%"></div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="skill-row">
+            <strong>CSS</strong>
+            <div>
+              <div class="bar" aria-hidden="true">
+                <div class="fill" style="width: 75%"></div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="skill-row">
+            <strong>JavaScript</strong>
+            <div>
+              <div class="bar" aria-hidden="true">
+                <div class="fill" style="width: 68%"></div>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="skill-row">
+            <strong>REACT</strong>
+            <div>
+              <div class="bar" aria-hidden="true">
+                <div class="fill" style="width: 62%"></div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-title">Experience</div>
+        <div class="h2">Where I’ve worked</div>
+        <p class="sub">
+          Replace with your roles. Use bullets for measurable impact.
+        </p>
+
+        <div class="timeline">
+          <article class="event">
+            <div class="event-top">
+              <div>
+                <h4>Software Developer — Company A</h4>
+                <div class="where">Remote • 2023–Present</div>
+              </div>
+              <span class="badge">Product Engineering</span>
+            </div>
+            <ul>
+              <li>
+                Improved page performance by optimizing rendering and API calls.
+              </li>
+              <li>
+                Built reusable components and a design system for consistent UX.
+              </li>
+              <li>
+                Collaborated with design/PM to ship features on a weekly
+                cadence.
+              </li>
+            </ul>
+          </article>
+
+          <article class="event">
+            <div class="event-top">
+              <div>
+                <h4>Frontend Engineer — Company B</h4>
+                <div class="where">City • 2021–2023</div>
+              </div>
+              <span class="badge">Web Platforms</span>
+            </div>
+            <ul>
+              <li>
+                Developed responsive dashboards and improved accessibility for
+                keyboard/screen readers.
+              </li>
+              <li>
+                Integrated APIs and improved reliability with testing and
+                monitoring.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">Contact</div>
+        <div class="h2">Let’s work together</div>
+       
+        <div class="contact">
+          <div class="contact-card">
+            <div class="badge">Quick info</div>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="icon" aria-hidden="true">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <span>agothmaturdit@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon" aria-hidden="true">🔗</div>
+                <div>
+                  <strong>Links</strong>
+                  <br>
+                  <span class="link-gruop"> <a href="https://github.com/Agoth-22" target="-blank">GitHub </a>• 
+                    <a href="https://www.linkedin.com/in/antipas-agoth-567923215/" target="-blank">LinkedIn </a>•</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Location</strong>
+                  <span>Kampala, Uganda</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form onsubmit="event.preventDefault(); handleSubmit();">
+            <div class="badge">Send a message</div>
+
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+
+            <div
+              style="
+                margin-top: 1rem;
+                display: flex;
+                gap: 0.8rem;
+                flex-wrap: wrap;
+              "
+            >
+              <button class="btn btn-primary" type="submit">
+                <span aria-hidden="true">✅</span>
+                <span>Submit</span>
+              </button>
+              <a class="btn" href="#top">
+                <span aria-hidden="true">⬆️</span>
+                <span>Back to top</span>
+              </a>
+            </div>
+
+            <p
+              id="formStatus"
+              style="margin: 0.9rem 0 0; color: var(--muted); font-weight: 750"
+            ></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Antipas Agoth. All rights reserved.</div>
+        <div style="display: flex; gap: 0.9rem; flex-wrap: wrap">
+          <a href="#projects" style="color: var(--muted); font-weight: 800"
+            >Projects</a
+          >
+          <a href="#skills" style="color: var(--muted); font-weight: 800"
+            >Skills</a
+          >
+          <a href="#contact" style="color: var(--muted); font-weight: 800"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Optional project filtering
+      const chips = Array.from(document.querySelectorAll(".chip"));
+      const projects = Array.from(document.querySelectorAll(".project"));
+
+      function setPressed(activeBtn) {
+        chips.forEach((btn) =>
+          btn.setAttribute("aria-pressed", String(btn === activeBtn))
+        );
+      }
+
+      chips.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.dataset.filter;
+          setPressed(btn);
+
+          projects.forEach((card) => {
+            const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
+            const match = filter === "all" || tags.includes(filter);
+            card.style.display = match ? "" : "none";
+          });
+        });
+      });
+
+      // Demo form handler (replace with your backend / form provider)
+      function handleSubmit() {
+        const name = document.getElementById("name").value.trim();
+        const status = document.getElementById("formStatus");
+        status.textContent = `Thanks, ${name}! This is a demo form. Connect it to a backend to receive messages.`;
+      }
+    </script>
+  </body>
+</html>
